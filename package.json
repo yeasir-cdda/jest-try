@@ -4,15 +4,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "set NODE_ENV=test&& jest ./ --runInBand --detectOpenHandles --forceExit",
     "test:ci": "jest --ci"
   },
   "dependencies": {
     "next": "latest",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-hook-form": "^7.33.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
